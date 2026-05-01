@@ -205,12 +205,12 @@
     <div class="header">
         <h1>VSP CLOSE BOARD</h1>
         <div class="header-meta">
-            Last updated: 2026-05-01 10:08 PDT | Data refreshes every 30 min via scheduled task
+            Last updated: 2026-05-01 10:40 PDT | Data refreshes every 30 min via scheduled task
         </div>
     </div>
 
     <div class="container">
-        <!-- Row 1: Activity KPIs (6 across) -->
+        <!-- Row 1: Activity KPIs (5 across) -->
         <div class="row kpi">
             <div class="card">
                 <div class="kpi-title">Calls Spencer</div>
@@ -252,7 +252,7 @@
                 <div class="kpi-title">MTD Quotes</div>
                 <div class="kpi-value">0</div>
                 <div class="kpi-subtitle">quotes this month</div>
-                <div style="margin-top: 8px; font-size: 14px; color: #666;">Avg: —</div>
+                <div style="margin-top: 8px; font-size: 14px; color: #666;">Avg: &mdash;</div>
             </div>
         </div>
 
@@ -330,7 +330,7 @@
     <script>
         Chart.register(ChartDataLabels);
 
-        // Pipeline Chart — Won excluded
+        // Pipeline Chart - Won excluded
         var pipelineCtx = document.getElementById('pipelineChart').getContext('2d');
         new Chart(pipelineCtx, {
             type: 'bar',
@@ -487,3 +487,4 @@
     </script>
 </body>
 </html>
+

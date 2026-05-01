@@ -205,19 +205,19 @@
     <div class="header">
         <h1>VSP CLOSE BOARD</h1>
         <div class="header-meta">
-            Last updated: 2026-05-01 11:09 PDT | Data refreshes every 30 min via scheduled task
+            Last updated: 2026-05-01 11:30 PDT | Data refreshes every 30 min via scheduled task
         </div>
     </div>
 
     <div class="container">
-        <!-- Row 1: Activity KPIs (5 across) -->
+        <!-- Row 1: Activity KPIs -->
         <div class="row kpi">
             <div class="card">
                 <div class="kpi-title">Calls Spencer</div>
-                <div class="kpi-value">0</div>
+                <div class="kpi-value">1</div>
                 <div class="kpi-subtitle">of 200 target</div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0%; background-color: #ea4335;"></div>
+                    <div class="progress-fill" style="width: 0.5%; background-color: #ea4335;"></div>
                 </div>
             </div>
 
@@ -252,11 +252,11 @@
                 <div class="kpi-title">MTD Quotes</div>
                 <div class="kpi-value">0</div>
                 <div class="kpi-subtitle">quotes this month</div>
-                <div style="margin-top: 8px; font-size: 14px; color: #666;">Avg: &mdash;</div>
+                <div style="margin-top: 8px; font-size: 14px; color: #666;">Avg: —</div>
             </div>
         </div>
 
-        <!-- Row 2: Financial Cards (5 across) -->
+        <!-- Row 2: Financial Cards -->
         <div class="row financial">
             <div class="card">
                 <div class="financial-title">Weighted Pipeline</div>
@@ -276,9 +276,9 @@
             <div class="card">
                 <div class="financial-title">YTD Won Revenue</div>
                 <div class="financial-value">$338k</div>
-                <div class="financial-subtitle">of $1,575k paced target (9 months)</div>
+                <div class="financial-subtitle">of $350k paced target (2 months)</div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 21.5%; background-color: #ea4335;"></div>
+                    <div class="progress-fill" style="width: 96.6%; background-color: #34a853;"></div>
                 </div>
             </div>
 
@@ -330,7 +330,7 @@
     <script>
         Chart.register(ChartDataLabels);
 
-        // Pipeline Chart - Won excluded
+        // Pipeline Chart — Won excluded
         var pipelineCtx = document.getElementById('pipelineChart').getContext('2d');
         new Chart(pipelineCtx, {
             type: 'bar',
@@ -423,11 +423,11 @@
         new Chart(pacingCtx, {
             type: 'line',
             data: {
-                labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+                labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
                 datasets: [
                     {
                         label: 'Actual Cumulative Won',
-                        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                         borderColor: '#2563eb',
                         backgroundColor: 'rgba(37, 99, 235, 0.05)',
                         borderWidth: 2,
@@ -441,7 +441,7 @@
                     },
                     {
                         label: 'SBA Target',
-                        data: [8333, 8333, 8333, 16667, 25000, 33333, 41667, 50000, 50000, 50000, 58333, 66667, 75000, 83333, 91667, 91667, 91667, 100000, 108333, 116667, 125000, 133333, 133333, 133333, 141667, 150000, 158333, 166667, 175000, 175000, 175000],
+                        data: [8333,8333,8333,16667,25000,33333,41667,50000,50000,50000,58333,66667,75000,83333,91667,91667,91667,100000,108333,116667,125000,133333,133333,133333,141667,150000,158333,166667,175000,175000,175000],
                         borderColor: '#999',
                         borderDash: [5, 5],
                         borderWidth: 2,

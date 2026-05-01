@@ -185,7 +185,7 @@
     <div class="header">
         <h1>VSP CLOSE BOARD</h1>
         <div class="header-meta">
-            Last updated: 2026-05-01 11:48 PDT | Data refreshes every 30 min via scheduled task
+            Last updated: 2026-05-01 13:18 PDT | Data refreshes every 30 min via scheduled task
         </div>
     </div>
 
@@ -194,10 +194,10 @@
         <div class="row kpi">
             <div class="card">
                 <div class="kpi-title">Calls Spencer</div>
-                <div class="kpi-value">1</div>
+                <div class="kpi-value">2</div>
                 <div class="kpi-subtitle">of 200 target</div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0.5%; background-color: #ea4335;"></div>
+                    <div class="progress-fill" style="width: 1.0%; background-color: #ea4335;"></div>
                 </div>
             </div>
 
@@ -240,7 +240,7 @@
         <div class="row financial">
             <div class="card">
                 <div class="financial-title">Weighted Pipeline</div>
-                <div class="financial-value">$424k</div>
+                <div class="financial-value">$442k</div>
                 <div class="financial-subtitle">excludes won deals</div>
             </div>
 
@@ -270,8 +270,8 @@
 
             <div class="card">
                 <div class="financial-title">Quote-to-Close</div>
-                <div class="financial-value">40%</div>
-                <div class="financial-subtitle">6 won / 15 quoted</div>
+                <div class="financial-value">38%</div>
+                <div class="financial-subtitle">6 won / 16 quoted</div>
             </div>
         </div>
 
@@ -319,7 +319,7 @@
                 datasets: [
                     {
                         label: 'Weighted Value',
-                        data: [169005, 254704, 0, 0],
+                        data: [169005, 273184, 0, 0],
                         backgroundColor: '#1a2332',
                         borderRadius: 4,
                         order: 1,
@@ -337,7 +337,7 @@
                     },
                     {
                         label: 'Unweighted Value',
-                        data: [889500, 670275, 0, 0],
+                        data: [889500, 718905, 0, 0],
                         backgroundColor: 'rgba(26,35,50,0.12)',
                         borderColor: 'rgba(26,35,50,0.35)',
                         borderWidth: 1,
@@ -374,7 +374,7 @@
                             },
                             afterBody: function(items) {
                                 var idx = items[0].dataIndex;
-                                var counts = [22, 9, 0, 0];
+                                var counts = [22, 10, 0, 0];
                                 var weights = [19, 38, 55, 70];
                                 return counts[idx] + ' opps @ ' + weights[idx] + '% weight';
                             }
@@ -407,7 +407,7 @@
                 datasets: [
                     {
                         label: 'Actual Cumulative Won',
-                        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        data: [0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
                         borderColor: '#2563eb',
                         backgroundColor: 'rgba(37, 99, 235, 0.05)',
                         borderWidth: 2,
@@ -417,6 +417,7 @@
                         pointBackgroundColor: '#2563eb',
                         pointBorderColor: '#fff',
                         pointBorderWidth: 2,
+                        spanGaps: false,
                         datalabels: { display: false }
                     },
                     {
@@ -466,4 +467,4 @@
         });
     </script>
 </body>
-</html>
+    </html>

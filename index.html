@@ -126,7 +126,7 @@
                     borderRadius: 4,
                     weights: [13, 26, 38, 48, 100],
                     counts: [18, 17, 0, 0, 6],
-                    datalabels: { anchor: 'end', align: 'top', font: { weight: 'bold', size: 11 }, formatter: function(value, context) { var count = context.dataset.counts[context.dataIndex]; var weight = context.dataset.weights[context.dataIndex]; var dollar = value >= 1000 ? '$' + Math.round(value / 1000) + 'k' : '$' + value; return dollar + ' (' + count + ' opps, ' + weight + '%)'; } }
+                    datalabels: { anchor: 'end', align: 'top', offset: 4, font: { weight: 'bold', size: 11 }, formatter: function(value, context) { var count = context.dataset.counts[context.dataIndex]; var dollar = value >= 1000 ? '$' + Math.round(value / 1000) + 'k' : '$' + value; return dollar + '\n' + count + ' opps'; } }
                 }, {
                     label: 'Unweighted Value',
                     data: [797000.0, 896460.95, 0, 0, 337948.65],
@@ -136,7 +136,7 @@
                     datalabels: { display: false }
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false, layout: { padding: { top: 30 } }, plugins: { legend: { display: true, position: 'bottom' }, datalabels: { display: true } }, scales: { y: { beginAtZero: true, grace: '15%', ticks: { callback: function(value) { return value >= 1000 ? '$' + Math.round(value / 1000) + 'k' : '$' + value; } } } } }
+            options: { responsive: true, maintainAspectRatio: false, layout: { padding: { top: 40 } }, plugins: { legend: { display: true, position: 'bottom' }, datalabels: { display: true } }, scales: { y: { beginAtZero: true, grace: '20%', ticks: { callback: function(value) { return value >= 1000 ? '$' + Math.round(value / 1000) + 'k' : '$' + value; } } } } }
         });
         const pacingCtx = document.getElementById('pacingChart').getContext('2d');
         new Chart(pacingCtx, {
